@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Counter</string>
+    <string name="initial_value">0</string>
+    <string name="increment">增加</string>
+    <string name="decrease">減少</string>
+    <string name="reset">歸零</string>
+</resources>
