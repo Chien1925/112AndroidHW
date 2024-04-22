@@ -53,16 +53,10 @@ public class MainActivity extends AppCompatActivity {
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 獲取lblOutput的內容
                 String outputText = output.getText().toString();
-
-                // 創建一個Intent物件來切換到ResultActivity
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
-
-                // 將lblOutput的內容放入Intent中以供ResultActivity使用
                 intent.putExtra("outputText", outputText);
-
-                startActivity(intent); // 啟動ResultActivity
+                startActivity(intent);
             }
         });
     }
