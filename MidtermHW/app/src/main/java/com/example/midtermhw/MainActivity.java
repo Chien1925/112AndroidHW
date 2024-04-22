@@ -2,8 +2,11 @@ package com.example.midtermhw;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -45,6 +48,23 @@ public class MainActivity extends AppCompatActivity {
 
         type.setOnCheckedChangeListener((group, checkedId) -> updateOutput());
         gender.setOnCheckedChangeListener((group, checkedId) -> updateOutput());
+
+        Button btnConfirm = findViewById(R.id.btnConfirm);
+        btnConfirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 獲取lblOutput的內容
+                String outputText = output.getText().toString();
+
+                // 創建一個Intent物件來切換到ResultActivity
+                Intent intent = new Intent(MainActivity.this, ResultActivity.class);
+
+                // 將lblOutput的內容放入Intent中以供ResultActivity使用
+                intent.putExtra("outputText", outputText);
+
+                startActivity(intent); // 啟動ResultActivity
+            }
+        });
     }
 
     private void updateOutput() {
