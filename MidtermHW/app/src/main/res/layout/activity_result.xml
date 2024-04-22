@@ -8,14 +8,14 @@
 
     <TextView
         android:id="@+id/resultTxv"
-        android:layout_width="152dp"
-        android:layout_height="41dp"
+        android:layout_width="162dp"
+        android:layout_height="177dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.244"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.156" />
+        app:layout_constraintVertical_bias="0.258" />
 
     <Button
         android:id="@+id/btnBack"
@@ -25,10 +25,10 @@
         android:text="返回"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintHorizontal_bias="0.188"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resultTxv"
-        app:layout_constraintVertical_bias="0.095" />
+        app:layout_constraintVertical_bias="0.092" />
 
     <TextView
         android:id="@+id/textView3"
@@ -36,9 +36,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:text="購票結果"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/resultTxv"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintHorizontal_bias="0.185"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
