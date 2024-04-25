@@ -1,5 +1,5 @@
 package com.example.midtermhw;
-
+//A109253046_規劃四甲_柯宇謙
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         RadioButton boy = findViewById(R.id.rdbBoy);
         RadioButton girl = findViewById(R.id.rdbGirl);
         if (boy.isChecked()) {
-            genderText = "男生";
+            genderText = getResources().getString(R.string.male);
         } else if (girl.isChecked()) {
             genderText = "女生";
         }
