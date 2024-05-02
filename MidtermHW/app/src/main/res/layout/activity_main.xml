@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="性別:"
+        android:text="@string/gender"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -22,7 +22,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="票種:"
+        android:text="@string/ticketTYpe"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -44,13 +44,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="男" />
+            android:text="@string/male" />
 
         <RadioButton
             android:id="@+id/rdbGirl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="女" />
+            android:text="@string/female" />
     </RadioGroup>
 
     <RadioGroup
@@ -67,19 +67,19 @@
             android:id="@+id/rdbAdult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="全票$500" />
+            android:text="@string/regularticket" />
 
         <RadioButton
             android:id="@+id/rdbChild"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="兒童票$250" />
+            android:text="@string/childticket" />
 
         <RadioButton
             android:id="@+id/rdbStudent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="學生票$400" />
+            android:text="@string/studentticket" />
     </RadioGroup>
 
     <Button
@@ -88,7 +88,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="296dp"
-        android:text="確認"
+        android:text="@string/confirm"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rgType" />
 
@@ -107,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="40dp"
-        android:text="購買張數："
+        android:text="@string/numberOfTickets"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rgType" />
 

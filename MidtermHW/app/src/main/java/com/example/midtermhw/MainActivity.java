@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         if (boy.isChecked()) {
             genderText = getResources().getString(R.string.male);
         } else if (girl.isChecked()) {
-            genderText = "女生";
+            genderText = getResources().getString(R.string.female);
         }
 
         String ticketTypeText = "";
