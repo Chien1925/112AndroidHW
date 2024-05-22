@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">0516HW</string>
+    <string-array name="meal" >
+    <item>主餐</item>
+    <item>附餐</item>
+    <item>飲料</item>
+    </string-array>
+
+    <string-array name="MainDish" >
+        <item>牛肉漢堡</item>
+        <item>魚排漢堡</item>
+        <item>義大利麵</item>
+        <item>披薩</item>
+    </string-array>
+
+    <string-array name="SideDish" >
+        <item>薯條</item>
+        <item>沙拉</item>
+        <item>玉米濃湯</item>
+        <item>蘋果派</item>
+    </string-array>
+
+    <string-array name="Drink" >
+        <item>可樂</item>
+        <item>雪碧</item>
+        <item>柳橙汁</item>
+        <item>無糖綠茶</item>
+    </string-array>
+
+</resources>
