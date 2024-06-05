@@ -2,6 +2,7 @@ package com.example.spandlv;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -72,9 +73,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -128,12 +126,15 @@ public class MainActivity extends AppCompatActivity {
             txvSide.setText("");
             txvDrink.setText("");
             return true;
+        } else if (id == R.id.action_send) {
+            Intent intent = new Intent(this, ResultActivity.class);
+            intent.putExtra("MAIN_DISH", txvMain.getText().toString());
+            intent.putExtra("SIDE_DISH", txvSide.getText().toString());
+            intent.putExtra("DRINK", txvDrink.getText().toString());
+            startActivity(intent);
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
-
-
-
-
 
 }

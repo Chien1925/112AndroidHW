@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">0516HW</string>
+    <string name="app_name">SPandLV</string>
     <string-array name="meal">
         <item>主餐</item>
         <item>附餐</item>
