@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private void updateListView(int position) {
         ArrayAdapter<CharSequence> arrayAdapter;
         switch (position) {
-            case 0: // 主餐
+            case 0:
                 arrayAdapter = ArrayAdapter.createFromResource(this,
                         R.array.MainDish, android.R.layout.simple_list_item_1);
                 listView.setAdapter(arrayAdapter);
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
                 break;
-            case 1: // 附餐
+            case 1:
                 arrayAdapter = ArrayAdapter.createFromResource(this,
                         R.array.SideDish, android.R.layout.simple_list_item_1);
                 listView.setAdapter(arrayAdapter);
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
                 break;
-            case 2: // 飲料
+            case 2:
                 arrayAdapter = ArrayAdapter.createFromResource(this,
                         R.array.Drink, android.R.layout.simple_list_item_1);
                 listView.setAdapter(arrayAdapter);
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> parentView) {
-                // Do nothing
+
             }
         });
 
@@ -122,9 +122,9 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_cancel) {
-            txvMain.setText("");
-            txvSide.setText("");
-            txvDrink.setText("");
+            txvMain.setText("未選擇");
+            txvSide.setText("未選擇");
+            txvDrink.setText("未選擇");
             return true;
         } else if (id == R.id.action_send) {
             Intent intent = new Intent(this, ResultActivity.class);
