@@ -3,6 +3,5 @@
     <string name="account">帳號</string>
     <string name="password">密碼</string>
     <string name="send">確認</string>
-    <string name="ACThint">Account:Your name</string>
-    <string name="PSWhint">Password:SHU03807612</string>
+    <string name="hint">Account:Your name\n\nPassword:SHU03807612</string>
 </resources>

@@ -19,11 +19,13 @@ public class MainActivity extends AppCompatActivity {
     public void  stringSend(View view){
         EditText edtAccount = (EditText) findViewById(R.id.edtAccount);
         EditText edtPassword = (EditText) findViewById(R.id.edtPassword);
+        TextView hint = (TextView) findViewById(R.id.textView1);
         TextView txtShow=(TextView) findViewById(R.id.txtShow);
         String Account = edtAccount.getText().toString();
         String Password= edtPassword.getText().toString();
         if(Password.equals("SHU03807612")){
             txtShow.setText("Hello " + Account);
+            hint.setText(" ");
         }
         else {
             txtShow.setText("密碼錯誤!");
